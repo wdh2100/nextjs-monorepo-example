@@ -325,7 +325,10 @@ export const AdminSidebar: FC = () => {
               <label className="whites mx-2 flex h-fit w-full cursor-pointer p-0 hover:bg-gray-4">
                 <div className="flex flex-row gap-4 p-4">
                   <div className="avatar-square avatar avatar-md">
-                    <img src={user?.image} alt="avatar" />
+                    <img
+                      src={user?.image ?? 'https://i.pravatar.cc/300'}
+                      alt="avatar"
+                    />
                   </div>
 
                   <div className="flex flex-col">
